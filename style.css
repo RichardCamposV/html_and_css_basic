@@ -35,10 +35,9 @@
     padding: 20px;
 }
 
-#content img, #content p {
+.two-columns img, .two-columns p {
     float: left;
     width: 40%;
-
 }
 
 #content img {
@@ -46,11 +45,48 @@
     height: 300px;
 }
 
-#content p {
+.two-columns p {
     margin: 0 20px;
+}
+
+#content form {
+    clear: both;
+}
+
+#content form [type=text], #content form [type=email], #content form textarea {
+    display: block;
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 0;
+    background-color: #efefef;
+    color: #666666;
+
+}
+
+#content table tr{
+    background-color: #ccc;
+}
+
+#content table tr:nth-child(even) {
+    background-color: #efefef;
+}
+
+#content table tr:nth-child(odd) {
+    background-color: #D18B00;
+}
+
+#content table tr>* {
+    /* the symbol > meaning one level under all 'tr' */
+    padding: 3px 10px;
+    border-bottom: 1px solid #666;
 }
 
 body {
     margin: 0px;
     font-family: sans-serif;
+}
+
+table {
+    border: 1px solid #ccc;
 }
